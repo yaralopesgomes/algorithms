@@ -1,0 +1,15 @@
+n = 100
+find = 8
+list = list((range(100)))
+higher = n
+lower = 0
+
+while True:
+    middle = round((higher + lower)/2)
+    if list[int(middle)] == find:
+        print(middle)
+        break
+    elif middle > find:
+        higher = middle
+    elif middle < find:
+        lower = middle
